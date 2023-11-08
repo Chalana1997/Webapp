@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Respond to the Quote</title>
+</head>
+<body>
+    <h1>Respond to the Quote</h1>
+    <form action="submitResponse" method="post">
+        <label for="responseContent">Your response:</label><br>
+        <textarea name="responseContent" id="responseContent" rows="4" cols="50"></textarea><br><br>
+        <input type="hidden" name="quoteId" value="${quote.id}">
+        <button type="submit">Submit Response</button>
+    </form>
+</body>
+</html>
